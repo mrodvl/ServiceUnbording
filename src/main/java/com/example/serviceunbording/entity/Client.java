@@ -10,7 +10,7 @@ import java.util.Set;
 @Data
 @Table(name = "clients")
 public class Client {
-    //id
+    //cucumber ===
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,6 +22,6 @@ public class Client {
     private String city;
 
     @OneToMany(mappedBy = "client")
-    private Set<Recording> recordings = new HashSet<Recording>();
+    private Set<Recording> recordings = new HashSet<>();
 
 }

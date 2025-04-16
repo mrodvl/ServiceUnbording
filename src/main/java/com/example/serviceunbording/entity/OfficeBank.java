@@ -8,8 +8,9 @@ import java.util.Set;
 
 @Entity
 @Data
-@Table(name = "office_banks")
+@Table(name = "office_bank")
 public class OfficeBank {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
